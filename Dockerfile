@@ -17,6 +17,7 @@ RUN apt-get update && apt-get install --no-install-recommends -y build-essential
     git \
     software-properties-common \
     avrdude \
+    libusb-dev \
     && rm -rf /var/lib/apt/lists/*
 
 ENV keyboard=xd75:default
