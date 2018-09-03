@@ -1,12 +1,19 @@
 # qmk-flash
-build and flash qmk firmwares seamessly
+build and flash qmk firmwares seamessly  
 
- * based on https://github.com/qmk/qmk_firmware/blob/master/Dockerfile
- * It will use my own qmk clone and generate an xd75 layout by default, edit build.sh to match your needs
-         
-## Example  
+## Usage
+1. Edit the REPO variable on build.sh with your qmk_firmware repo  
+2. Run build.exe with the qmk make argumemts.  
+3. With :dfu you can also flash the firmware in the device.  
+
+## Examples
 ```bash
 build.sh xd75:default
 build.sh xd75:oprietop
 build.sh xd75:oprietop:dfu
+build.sh minidox:oprietop
+build.sh minidox:oprietop:dfu
 ```
+## Notes
+ * based on https://github.com/qmk/qmk_firmware/blob/master/Dockerfile  
+ * https://docs.qmk.fm/#/newbs_building_firmware?id=build-your-firmware  
