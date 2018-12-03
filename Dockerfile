@@ -24,4 +24,4 @@ ENV keyboard=xd75:default
 
 VOLUME /qmk
 WORKDIR /qmk
-CMD make git-submodule; make clean; make ${keyboard}¶
+CMD make git-submodule; make clean; make ${keyboard}
