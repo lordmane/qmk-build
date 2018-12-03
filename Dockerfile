@@ -1,5 +1,5 @@
-FROM debian:jessie
-MAINTAINER Erik Dasque <erik@frenchguys.com>
+FROM ubuntu:18.04
+MAINTAINER Oscar Prieto <oprietop@uoc.edu>
 
 RUN apt-get update && apt-get install --no-install-recommends -y build-essential \
     gcc \
@@ -24,4 +24,4 @@ ENV keyboard=xd75:default
 
 VOLUME /qmk
 WORKDIR /qmk
-CMD make git-submodule; make clean; make ${keyboard}
+CMD make git-submodule; make clean; make ${keyboard}¶
