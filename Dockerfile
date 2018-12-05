@@ -1,4 +1,4 @@
-FROM ubuntu:18.04
+FROM ubuntu:cosmic
 MAINTAINER Oscar Prieto <oprietop@uoc.edu>
 
 RUN apt-get update && apt-get install --no-install-recommends -y build-essential \
