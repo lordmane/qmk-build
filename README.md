@@ -12,7 +12,10 @@ build.sh xd75:default
 build.sh xd75:oprietop
 build.sh xd75:oprietop:dfu
 build.sh minidox:oprietop
-build.sh minidox:oprietop:dfu
+build.sh minidox:oprietop:avrdude
+build.sh iris/rev2:oprietop
+build.sh iris/rev2:oprietop:avrdude
+build.sh orthodox/rev3:oprietop:avrdude
 ```
 ## Notes
  * based on https://github.com/qmk/qmk_firmware/blob/master/Dockerfile  
