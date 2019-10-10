@@ -109,6 +109,7 @@ void matrix_init_user(void) { // Runs boot tasks for keyboard
     rgblight_sethsv_noeeprom(43,100,50); // Goldenrod
     rgblight_mode(13);
   #endif
+    tap_code(KC_NLCK)   // register and unregister (press and release) NUMLOCK
 };
 
 static uint16_t bspc_role;
@@ -250,6 +251,12 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         break;
       case _AD:
         rgblight_sethsv(0,255,rgblight_config.val); // Red
+        break;
+      case _MS:
+        rgblight_sethsv(240,255,rgblight_config.val); // blue
+        break;
+      case _NP:
+        rgblight_sethsv(200,255,rgblight_config.val); // No Idea
         break;
     }
     return state;
